@@ -14,6 +14,7 @@ set foldcolumn=6
 map <F4> :set syn=javascript<CR>
 if has("autocmd")
     au BufReadPost *.erb set syntax=javascript
+    au BufReadPost *.cfc set syntax=cfscript
 endif
 set directory=~/.vim_backup
 set backupdir=~/.vim_backup
@@ -31,3 +32,4 @@ Bundle "honza/snipmate-snippets"
 Bundle 'garbas/vim-snipmate'
 Bundle 'ddollar/nerdcommenter'
 Bundle 'saikobee/vim-javascript-syntax'
+Bundle 'davejlong/cf-utils.vim'
