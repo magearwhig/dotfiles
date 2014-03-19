@@ -1,4 +1,5 @@
 set nocompatible
+set clipboard=unnamed
 filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
@@ -13,6 +14,7 @@ set foldmethod=indent
 set foldcolumn=6
 map <F4> :set syn=javascript<CR>
 if has("autocmd")
+    au BufReadPost *.ejs set syntax=html
     au BufReadPost *.erb set syntax=javascript
     au BufReadPost *.cfc set syntax=cfscript
 endif
@@ -28,7 +30,7 @@ Bundle 'gmarik/vundle'
 Bundle 'tpope/vim-fugitive'
 Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'tomtom/tlib_vim'
-Bundle "honza/snipmate-snippets"
+Bundle "honza/vim-snippets"
 Bundle 'garbas/vim-snipmate'
 Bundle 'ddollar/nerdcommenter'
 Bundle 'saikobee/vim-javascript-syntax'
