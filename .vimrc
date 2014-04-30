@@ -1,8 +1,8 @@
 set nocompatible
 set clipboard=unnamed
 filetype off
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 set statusline=%t
 set statusline+=%{fugitive#statusline()}
 set number
@@ -26,12 +26,15 @@ set ls=2
 
 " let Vundle manage Vundle
 " required! 
-Bundle 'gmarik/vundle'
-Bundle 'tpope/vim-fugitive'
-Bundle 'MarcWeber/vim-addon-mw-utils'
-Bundle 'tomtom/tlib_vim'
-Bundle "honza/vim-snippets"
-Bundle 'garbas/vim-snipmate'
-Bundle 'ddollar/nerdcommenter'
-Bundle 'saikobee/vim-javascript-syntax'
-Bundle 'davejlong/cf-utils.vim'
+Plugin 'gmarik/vundle'
+Plugin 'tpope/vim-fugitive'
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'honza/vim-snippets'
+Plugin 'garbas/vim-snipmate'
+Plugin 'ddollar/nerdcommenter'
+Plugin 'saikobee/vim-javascript-syntax'
+Plugin 'davejlong/cf-utils.vim'
+
+call vundle#end()            " required
+filetype plugin indent on    " required
